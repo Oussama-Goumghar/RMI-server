@@ -1,4 +1,4 @@
-package sample;
+package UI_Controllers;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

@@ -1,4 +1,4 @@
-package sample;
+package UI_Controllers;
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;
@@ -85,7 +85,7 @@ public class ChatServer extends UnicastRemoteObject implements ChatServerIF {
 	 */
 	public void updateChat(String name, String nextPost) throws RemoteException {
 		String message =  name + " : " + nextPost + "\n";
-		sendToAll(message);
+		sendToAll(message,name);
 	}
 	
 	/**
@@ -125,12 +125,12 @@ public class ChatServer extends UnicastRemoteObject implements ChatServerIF {
 	private void registerChatter(String[] details){		
 		try{
 			ChatClient3IF nextClient = (ChatClient3IF)Naming.lookup("rmi://" + details[1] + "/" + details[2]);
-			
+
 			chatters.addElement(new Chatter(details[0], nextClient));
 			
-			nextClient.messageFromServer("[Server] : Hello " + details[0] + " you are now free to chat.\n");
-			
-			sendToAll("[Server] : " + details[0] + " has joined the group.\n");
+		//	nextClient.messageFromServer("[Server] : Hello " + details[0] + " you are now free to chat.\n");
+
+		//	sendToAll("[Server] : " + details[0] + " has joined the group.\n","SERVER");
 			
 			updateUserList();		
 		}
@@ -174,9 +174,10 @@ public class ChatServer extends UnicastRemoteObject implements ChatServerIF {
 	 * Send a message to all users
 	 * @param newMessage
 	 */
-	public void sendToAll(String newMessage){	
+	public void sendToAll(String newMessage,String name){
 		for(Chatter c : chatters){
 			try {
+				if(c.name.equals(name)) continue;
 				c.getClient().messageFromServer(newMessage);
 			} 
 			catch (RemoteException e) {

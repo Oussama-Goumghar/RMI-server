@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/ChatClient3IF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/ChatServerIF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Chatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ant.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI_Controllers/security.policy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ChatServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/InterfaceClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/InterfaceServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ChatClient3IF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI_Controllers/ChatClient3IF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI_Controllers/ChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ChatServerIF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI_Controllers/ChatServerIF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Chatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI_Controllers/Chatter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +75,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -117,6 +118,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -156,12 +158,12 @@
       <Port>5050</Port>
     </configuration>
     <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sample.ChatServer" />
+      <option name="MAIN_CLASS_NAME" value="UI_Controllers.ChatServer" />
       <module name="Chat" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sample.*" />
+          <option name="PATTERN" value="UI_Controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,7 +177,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sample.*" />
+          <option name="PATTERN" value="UI_Controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -187,6 +189,17 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -254,6 +267,7 @@
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1624747790657" duration="725000" />
       <workItem from="1624781376209" duration="6718000" />
+      <workItem from="1624795643787" duration="5733000" />
     </task>
     <servers />
   </component>
@@ -270,6 +284,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
